@@ -13,6 +13,9 @@ Gem::Specification.new do |s|
   s.description = %q{Gem Description}
 
   s.rubyforge_project = "breadrole"
+  
+  s.add_dependency "activesupport" , "~> 3.0.7"
+  s.add_dependency "rails"         , "~> 3.0.7"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
