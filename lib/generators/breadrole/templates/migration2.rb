@@ -11,7 +11,7 @@ class CreateBreadroleData < ActiveRecord::Migration
     controllers.each do |controller|
       execute "insert into breadrole_controllers (name) values (('#{controller.to_s.gsub("Controller", "")}')"
       # then for each one, add it's actions
-      
+      # controller.instance_methods(false)
     end
   end
   
