@@ -1,5 +1,5 @@
 module Breadrole
-  class RestrictedController < ApplicationController
+  class RestrictedController < ::ApplicationController
     before_filter :current_user, :authorize, :hasAccess
     helper_method :hasAccess
   

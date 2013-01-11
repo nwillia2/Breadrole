@@ -44,6 +44,10 @@ class CreateBreadroleTables < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :securityroles
+    drop_table :breadrole_securityroles
+    drop_table :breadrole_controllers
+    drop_table :breadrole_actions
+    drop_table :breadrole_securityroles_controllers
+    drop_table :breadrole_controllers_actions          
   end
 end
